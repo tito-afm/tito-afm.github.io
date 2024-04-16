@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'modern_cybertronicregular';
+    src: url('/font/modern_cybertronic-webfont.eot');
+    src: url('/font/modern_cybertronic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/modern_cybertronic-webfont.woff2') format('woff2'),
+         url('/font/modern_cybertronic-webfont.woff') format('woff'),
+         url('/font/modern_cybertronic-webfont.ttf') format('truetype'),
+         url('/font/modern_cybertronic-webfont.svg#modern_cybertronicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* .lancelot-regular {
+    font-family: "Lancelot", serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+/* MAINPAGE */
+    
+@keyframes fadeInAnimation {
+  
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    background-color: white;
+    margin: 0;
+    
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    text-shadow: 0 0 5px rgb(253, 191, 133);
+    color: transparent;
+}
+
+nav {
+    font-family: "Lancelot", serif;
+    display: grid;
+    font-size: 2.25em;
+
+}
+
+#mainlinks {
+    position: fixed;
+    top: .6em;
+    /* background-color: greenyellow; */
+    width: 100%;
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    justify-content: space-around;
+    z-index: 999;
+
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+
+}
+
+#security{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#security h1{
+    font-family: "montserrat";
+   font-size: 5em; 
+   margin-bottom: 5em; 
+}
+
+#sec1{
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    position: sticky;
+    top: .5em;
+    text-shadow: #ff0505 0 0 20px;
+}
+
+#sec2{
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top: 1em;
+    text-shadow: #ff0505 0 0 20px;
+}
+
+#sec3{
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top: 2.5em;
+    margin-left: 1.5em;
+    text-shadow: #ff0505 0 0 20px;
+}
+
+#sec4{
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top: 3em;
+    margin-left: 1.5em;
+    text-shadow: #ff0505 0 0 20px;
+}
+
+#sec5{
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top: 3.5em;
+    margin-left: 1.5em;
+    text-shadow: #ff0505 0 0 20px;
+}
+
+#sec6{
+    color: #ffffff;
+    position: sticky;
+    top: 6.0em;
+    font-size: 2em;
+    text-shadow: #0d5be1 0 0 20px;
+}
+
+#sec7{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-shadow: #000000 0 0 20px;
+    text-align: center;
+    letter-spacing: 1.5em;
+    margin: 0 auto;
+
+}
+
+#sec7 img{
+    width: 10%;
+}
+
+#risk{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+#risk h1{
+    width: 100%;
+    font-family: "montserrat";
+   font-size: 2em; 
+   text-justify: inter-word;
+   margin-bottom: 5em; 
+}
+
+#halt{
+    display: flex;
+    justify-content: center;
+    margin-top: 15em;
+}
+
+#halt img{
+    width: 90%;
+    height: auto;
+}
+
+#warnings img{
+    width: 200px;
+    height: 200px;
+}
+
+#intelligence-logo{
+    width: 100vh;
+    height: 100%;
+    
+}
+
+#intelligence-logo img{
+    width: 180vh;
+}
+
+
+#blog{
+    width: 100%;
+    height: auto;
+    /* border: solid 2px black; */
+    margin: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+
+}
+
+#logo-frame{
+    width: 100%;
+    height: auto;
+    border: dotted 2px black;
+    display: flex;
+    justify-content: center;
+}
+
+#intelligence-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 6em;
+    
+}
+
+
+.img-comp-container {
+    position: relative;
+      width: 600px;
+    height: 600px; /*should be the same height as the images*/
+    overflow: hidden;
+  }
+  
+  .img-comp-img {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    overflow:hidden;
+    
+  }
+
+  #bars{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  #bars img{
+    width: 30%;
+    height: auto;
+
+  }
+  
+  .img-comp-img img {
+    display:block;
+    vertical-align:middle;
+      width: 600px;
+      height: 600px;
+      
+  }
+  
+  .container {
+    position: relative;
+      width: 800px;
+    height: 800px; /*should be the same height as the images*/
+    overflow: hidden;
+  }
+  
+  .container2 {
+    position: relative;
+      width: 100vw;
+    height: 80vh; /*should be the same height as the images*/
+    overflow: hidden;
+  }
+
+  #hello{
+    width: 70%;
+    height: auto;
+    margin-top: -13em;
+    font-family: "montserrat";
+    color: #ff0505;
+    /* text-shadow: #ff0505 0 0 20px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #hello h1{
+    text-shadow: #ff0505 0 0 20px;
+  }
+
+  #hello p{
+    width: 100%;
+  }
+
+  #names{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    font-size: 3em;
+  }
+  
+
+.accordion {
+    font-family: "montserrat";
+    font-size: 1em;
+    background-color: #eee;
+    color: red;
+    cursor: pointer;
+    padding: 10px 10px 10px 19%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px  red;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: white;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.panel {
+    font-family: "montserrat";
+    padding: 0px 18px;
+    background-color: white;
+    border: dotted 1px red;
+    display: flex;
+    max-height: 0;
+    height: fit-content;
+    overflow: hidden; 
+    transition: max-height 0.5s ease-in-out;
+  }
+
+.panel img{
+    width: 50%;
+    height: fit-content;
+    padding: 1em;
+}
+
+.panel-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+.panel p{
+    font-size: 1em;
+    padding:  0em 2em 2em 2em;
+}
+
+.panel-line{
+    display: inline-block;
+    border: 1px solid red;
+    margin-top: .5em;
+    height: 1px;
+    width: 100%;
+}
+
+#blog-entries{
+    width: 100%;
+    padding: 10%;
+}
+
+#blog-nav{
+    display: flex;
+    justify-content: center;
+}
+
+#exit-icon{
+    width: 17%;
+    height: auto;
+}
+
+#exit-icon img{
+    width: 100%
+}
+
+.flash-this{
+    -webkit-animation: flash linear .05s infinite;
+    animation: flash linear .05s infinite;
+    animation-duration: 0.05s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: flash;
+    animation-timeline: auto;
+    animation-range-start: normal;
+}
+
+.flash-this2{
+    -webkit-animation: flash linear .05s infinite;
+    animation: flash linear .05s infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: flash;
+    animation-timeline: auto;
+    animation-range-start: normal;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  @keyframes fadeInAnimation {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
